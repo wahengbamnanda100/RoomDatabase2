@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B3B3B"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="110.25dp"
+        android:layout_height="28.2125dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/group" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="64dp"
+        android:text="Hello"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="start"
+        android:text="Sign in to your account."
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="324dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/etPhNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginRight="26dp"
+            android:backgroundTint="#707070"
+            android:hint="Enter your mobile no."
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:translationY="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="24dp"
+            android:onClick="forgot"
+            android:text="Forgot your mobile no?"
+            android:textColor="#42A0FF"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/abc"
+            android:onClick="logIn"
+            android:padding="16dp"
+            android:text="LogIn"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="24dp"
+                android:text="Don't have an account?"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="24dp"
+                android:onClick="signUp"
+                android:text="Sign Up"
+                android:textColor="#42A0FF"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
